@@ -27,7 +27,7 @@ import java.awt.Toolkit;
         jru.addPlayer(new OffencePlayer("E. J. Rowland", 48,38));
 
         timer = new Timer();
-        timer.schedule(new RemindTask(),0,500);
+        timer.schedule(new RemindTask(),0,1000);
 
     }
 

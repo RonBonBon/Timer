@@ -37,7 +37,8 @@ public class Team {
         int playerCount = players.size();
         int randomPlayerIndex = RandomUtils.getInt(0, playerCount - 1);
         Player p = players.get(randomPlayerIndex);
-        return p.shootFromTwo();
+        if (p instanceof DefencePlayer) return p.shootFromTwo();
+        return false;
     }
 
     public void printPlayers(){
