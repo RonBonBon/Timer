@@ -38,6 +38,7 @@ public class Team {
         int randomPlayerIndex = RandomUtils.getInt(0, playerCount - 1);
         Player p = players.get(randomPlayerIndex);
         if (p instanceof DefencePlayer) return p.shootFromTwo();
+        else if (p instanceof OffencePlayer) return ((OffencePlayer) p).shootFromThree();
         return false;
     }
 
